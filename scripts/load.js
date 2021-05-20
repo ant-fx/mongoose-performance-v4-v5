@@ -3,6 +3,7 @@ const { log } = console;
 
 const run = async () => {
   const start = Date.now();
+  log(`Loading documents`);
   const data = await TestModel
     .find()
     .exec();
